@@ -2,7 +2,7 @@
 # get_inventory_item_key.mcfunction
 # author:orion
 # ------------------------------------------------------------- #
-tellraw @a [{"text":"[debug] get_inventory_item_key","italic":true,"color":"red"}]
+#tellraw @a [{"text":"[debug] get_inventory_item_key","italic":true,"color":"red"}]
 
 execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:34b,id:"minecraft:air"}]}}]} store result score @s IO_TR_INV_SLOT_34 run scoreboard players get air IO_MS_ITEM_SORT 
 execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:34b,id:"minecraft:stone"}]}}]} store result score @s IO_TR_INV_SLOT_34 run scoreboard players get stone IO_MS_ITEM_SORT 

@@ -45,5 +45,9 @@ scoreboard objectives add IO_TR_INV_SLOT_32 dummy
 scoreboard objectives add IO_TR_INV_SLOT_33 dummy
 scoreboard objectives add IO_TR_INV_SLOT_34 dummy
 scoreboard objectives add IO_TR_INV_SLOT_35 dummy
+scoreboard objectives add IO_TR_VALUE dummy
+scoreboard objectives add IO_TR_MIN_VALUE dummy
+# ソート機能の排他制御用
+scoreboard objectives add IO_TR_LOCK dummy
 
 function orion.io:create_item_sort_key
