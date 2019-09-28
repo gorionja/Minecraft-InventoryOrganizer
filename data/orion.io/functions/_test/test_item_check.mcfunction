@@ -1,9 +1,3 @@
-# ------------------------------------------------------------- #
-# io1.mcfunction
-# author:orion
-# ------------------------------------------------------------- #
-# tellraw @a [{"text":"[debug] io1","italic":true,"color":"red"}]
-
 execute at @s run summon minecraft:item ~10 ~ ~ {Item:{id:"minecraft:air",Count:1}}
 execute at @s run summon minecraft:item ~10 ~ ~ {Item:{id:"minecraft:stone",Count:1}}
 execute at @s run summon minecraft:item ~10 ~ ~ {Item:{id:"minecraft:granite",Count:1}}

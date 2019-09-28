@@ -1,9 +1,3 @@
-# ------------------------------------------------------------- #
-# io1.mcfunction
-# author:orion
-# ------------------------------------------------------------- #
-# tellraw @a [{"text":"[debug] io1","italic":true,"color":"red"}]
-
 # 1 minecraft:air
 scoreboard players set air IO_MS_ITEM_SORT 1
 # 2 minecraft:stone

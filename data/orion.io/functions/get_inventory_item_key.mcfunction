@@ -1,9 +1,3 @@
-# ------------------------------------------------------------- #
-# get_inventory_item_key.mcfunction
-# author:orion
-# ------------------------------------------------------------- #
-#tellraw @a [{"text":"[debug] get_inventory_item_key","italic":true,"color":"red"}]
-
 execute if entity @s[nbt={Inventory:[{Slot:0b}]}] run function orion.io:slot0/get_inventory_item_key
 execute if entity @s[nbt={Inventory:[{Slot:1b}]}] run function orion.io:slot1/get_inventory_item_key
 execute if entity @s[nbt={Inventory:[{Slot:2b}]}] run function orion.io:slot2/get_inventory_item_key

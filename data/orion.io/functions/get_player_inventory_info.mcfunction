@@ -1,9 +1,3 @@
-# ------------------------------------------------------------- #
-# get_player_inventory_info.mcfunction
-# author:orion
-# ------------------------------------------------------------- #
-#tellraw @a [{"text":"[debug] get_player_inventory_info","italic":true,"color":"red"}]
-
 # プレイヤーのインベントリ情報をデータ保存用アイテムにペースト
 data modify block -29999983 56 -29999983 Items[0].tag.Storage[0] set from entity ORiONOAO Inventory[{Slot:0b}]
 data modify block -29999983 56 -29999983 Items[0].tag.Storage[1] set from entity ORiONOAO Inventory[{Slot:1b}]
