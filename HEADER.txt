@@ -1,9 +1,0 @@
-## SPDX-License-Identifier: MIT
-
-############################################################################
-## File Name: $FILE_NAME.mcfunction
-## Author: orion
-############################################################################
-
-## Using for debug
-## tellraw @a [{"text":"[DEBUG] $FILE_NAME","italic":true,"color":"red"}]
