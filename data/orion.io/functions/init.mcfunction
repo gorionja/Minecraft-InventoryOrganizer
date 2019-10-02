@@ -54,3 +54,5 @@ scoreboard objectives add IO_TR_LOCK dummy
 function orion.io:create_item_sort_key
 
 scoreboard players set loop_flg IO_MS_STATUS 0
+
+forceload add -29999978 -29999983
