@@ -36,5 +36,8 @@ execute unless score @s IO_INV_SLOT_32 matches 0 unless score @s IO_INV_SLOT_33 
 execute unless score @s IO_INV_SLOT_33 matches 0 unless score @s IO_INV_SLOT_34 matches 0 unless score @s IO_INV_SLOT_33 <= @s IO_INV_SLOT_34 run function orion.io:swap/swap_slot33_to_slot34
 execute unless score @s IO_INV_SLOT_34 matches 0 unless score @s IO_INV_SLOT_35 matches 0 unless score @s IO_INV_SLOT_34 <= @s IO_INV_SLOT_35 run function orion.io:swap/swap_slot34_to_slot35
 
+scoreboard players set loop_flg IO_MS_STATUS 1
 scoreboard players add loop_count IO_MS_STATUS 1
-function orion.io:sort_while_child
+execute unless score swap_count IO_MS_STATUS matches 0 run function orion.io:_test/test_show_inv_slot
+# execute if score swap_count IO_MS_STATUS matches 1.. run function orion.io:sort_while_parent
+# 

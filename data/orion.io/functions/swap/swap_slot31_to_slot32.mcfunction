@@ -8,7 +8,10 @@ data modify block -29999983 56 -29999982 Items[0].tag.Storage[{Slot:31b}].Slot s
 # Bのslotデータ変更
 data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:32b}].Slot set value 31b
 # B → A
-data modify block -29999983 56 -29999983 Items[0].tag.Storage append from block -29999983 56 -29999982 Items[0].tag.Storage[{Slot:31b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append from block -29999983 56 -29999982 Items[0].tag.Storage[{Slot:32b}]
+# Bのデータ削除
+data remove block -29999983 56 -29999982 Items[0].tag.Storage[{Slot:32b}]
+
 scoreboard players add swap_count IO_MS_STATUS 1
 
 function orion.io:slots/slot31/get_inventory_item_key
