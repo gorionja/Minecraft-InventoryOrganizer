@@ -1,3 +1,5 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] get_inventory_item_key","italic":true,"color":"red"}]
 execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:0b,id:"minecraft:air"}]}}]} store result score @s IO_INV_SLOT_0 run scoreboard players get air IO_MS_ITEM_SORT 
 execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:0b,id:"minecraft:stone"}]}}]} store result score @s IO_INV_SLOT_0 run scoreboard players get stone IO_MS_ITEM_SORT 
 execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:0b,id:"minecraft:granite"}]}}]} store result score @s IO_INV_SLOT_0 run scoreboard players get granite IO_MS_ITEM_SORT 

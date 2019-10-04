@@ -1,3 +1,5 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] test_item_check_destroy_commandblock","italic":true,"color":"red"}]
 setblock -29999983 56 -29999967 minecraft:air replace
 setblock -29999983 56 -29999966 minecraft:air replace
 setblock -29999983 56 -29999965 minecraft:air replace

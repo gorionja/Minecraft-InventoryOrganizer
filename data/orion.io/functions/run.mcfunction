@@ -1,7 +1,9 @@
-tellraw @p [{"text":"loop count"},{"score":{"name":"loop_count","objective":"IO_MS_STATUS"}},{"text":", swap count"},{"score":{"name":"swap_count","objective":"IO_MS_STATUS"}}]
+## Using for debug
+tellraw @a [{"text":"[DEBUG] ************* RUN *************","italic":true,"color":"red"}]
 
 function orion.io:setblock_chest
 function orion.io:get_player_inventory_info
+function orion.io:get_chest_array_to_slot
 function orion.io:get_inventory_item_key
 function orion.io:remove_empty_array
 function orion.io:renumbering_player_inventory_info

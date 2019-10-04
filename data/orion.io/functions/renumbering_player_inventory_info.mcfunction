@@ -1,3 +1,5 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] renumbering_player_inventory_info","italic":true,"color":"red"}]
 execute if data block -29999983 56 -29999983 Items[0].tag.Storage[0] unless data block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:0b}] run data modify block -29999983 56 -29999983 Items[0].tag.Storage[0].Slot set value 0b
 execute if data block -29999983 56 -29999983 Items[0].tag.Storage[1] unless data block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:1b}] run data modify block -29999983 56 -29999983 Items[0].tag.Storage[1].Slot set value 1b
 execute if data block -29999983 56 -29999983 Items[0].tag.Storage[2] unless data block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:2b}] run data modify block -29999983 56 -29999983 Items[0].tag.Storage[2].Slot set value 2b

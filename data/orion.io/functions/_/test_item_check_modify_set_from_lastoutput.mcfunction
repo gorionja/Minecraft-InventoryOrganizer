@@ -1,3 +1,5 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] test_item_check_modify_set_from_lastoutput","italic":true,"color":"red"}]
 execute positioned as ORiONOAO run data modify block -29999983 56 -29999982 Items[0].tag.Storage[0] set from block -29999983 56 -29999967
 execute positioned as ORiONOAO run data modify block -29999983 56 -29999982 Items[0].tag.Storage[1] set from block -29999983 56 -29999966
 execute positioned as ORiONOAO run data modify block -29999983 56 -29999982 Items[0].tag.Storage[2] set from block -29999983 56 -29999965

@@ -1,3 +1,5 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] test_item_check_set_commandblock","italic":true,"color":"red"}]
 execute at @s run setblock -29999983 56 -29999967 minecraft:command_block{auto: 1b, Command: "/data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:\"minecraft:air\"}}]", TrackOutput: 1b} replace
 execute at @s run setblock -29999983 56 -29999966 minecraft:command_block{auto: 1b, Command: "/data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:\"minecraft:stone\"}}]", TrackOutput: 1b} replace
 execute at @s run setblock -29999983 56 -29999965 minecraft:command_block{auto: 1b, Command: "/data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:\"minecraft:granite\"}}]", TrackOutput: 1b} replace

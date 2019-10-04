@@ -1,3 +1,9 @@
+## Using for debug
+tellraw @a [{"text":"[DEBUG] sort_while_parent","italic":true,"color":"red"}]
+tellraw @p [{"text":"loop count: "},{"score":{"name":"loop_count","objective":"IO_MS_STATUS"}},{"text":", swap count: "},{"score":{"name":"swap_count","objective":"IO_MS_STATUS"}}]
+tellraw @a [{"text":"before","color":"blue"}]
+function orion.io:_/test_show_inv_slot
+function orion.io:_/test_show_cst_slot
 scoreboard players set swap_count IO_MS_STATUS 0
 
 execute unless score @s IO_INV_SLOT_0 matches 0 unless score @s IO_INV_SLOT_1 matches 0 unless score @s IO_INV_SLOT_0 <= @s IO_INV_SLOT_1 run function orion.io:swap/swap_slot00_to_slot01
@@ -36,8 +42,12 @@ execute unless score @s IO_INV_SLOT_32 matches 0 unless score @s IO_INV_SLOT_33 
 execute unless score @s IO_INV_SLOT_33 matches 0 unless score @s IO_INV_SLOT_34 matches 0 unless score @s IO_INV_SLOT_33 <= @s IO_INV_SLOT_34 run function orion.io:swap/swap_slot33_to_slot34
 execute unless score @s IO_INV_SLOT_34 matches 0 unless score @s IO_INV_SLOT_35 matches 0 unless score @s IO_INV_SLOT_34 <= @s IO_INV_SLOT_35 run function orion.io:swap/swap_slot34_to_slot35
 
+tellraw @a [{"text":"after","color":"green"}]
+function orion.io:_/test_show_inv_slot
+function orion.io:_/test_show_cst_slot
+
 scoreboard players set loop_flg IO_MS_STATUS 1
 scoreboard players add loop_count IO_MS_STATUS 1
 execute unless score swap_count IO_MS_STATUS matches 0 run function orion.io:_test/test_show_inv_slot
 # execute if score swap_count IO_MS_STATUS matches 1.. run function orion.io:sort_while_parent
-# 
+# # 
