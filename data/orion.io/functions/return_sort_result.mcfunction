@@ -13,14 +13,23 @@ execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items app
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:7b}]
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:8b}]
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:0b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:1b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:2b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:3b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:4b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:5b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:6b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:7b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:8b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 
 # １列目
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:9b}]
@@ -33,15 +42,23 @@ execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items app
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:16b}]
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:17b}]
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:9b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:10b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:11b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:12b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:13b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:14b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:15b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:16b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:17b}]
-
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 # ２列目
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:18b}]
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:19b}]
@@ -53,14 +70,23 @@ execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items app
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:25b}]
 execute positioned as @e[tag=sort_chest_a] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:26b}]
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:18b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:19b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:20b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:21b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:22b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:23b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:24b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:25b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:26b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 
 # ３列目
 
@@ -82,6 +108,25 @@ execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items app
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:6b}]
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:7b}]
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:8b}]
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:27b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:28b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:29b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:30b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:31b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:32b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:33b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:34b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+data remove block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:35b}]
+data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
+
 # # data get block -29999983 56 -29999983
 execute positioned as @e[nbt={CustomName:"{\"text\":\"sort\"}"}] run setblock ~ ~ ~ minecraft:air destroy
 
