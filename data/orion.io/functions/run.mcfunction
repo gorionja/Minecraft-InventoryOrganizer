@@ -2,7 +2,7 @@
 tellraw @a [{"text":"[DEBUG] ************* RUN *************","italic":true,"color":"red"}]
 
 function orion.io:setblock_chest
-function orion.io:set_player_inv_to_storages
+function orion.io:set_storages_from_player_inv
 function orion.io:get_chest_array_to_slot
 function orion.io:get_inventory_item_key
 function orion.io:remove_empty_array
