@@ -18,10 +18,12 @@ scoreboard players add swap_count IO_MS_STATUS 1
 
 function orion.io:slots/slot10/set_score_inventory_slot
 function orion.io:slots/slot11/set_score_inventory_slot
+function orion.io:set_score_storage_array_from_storage_slot
+## DEBUG ##
 function orion.io:_/test_show_inv_slot
 
 function orion.io:remove_empty_array
-function orion.io:renumbering_player_inventory_info
 function orion.io:slots/slot10/set_score_inventory_slot
 function orion.io:slots/slot11/set_score_inventory_slot
+## DEBUG ##
 function orion.io:_/test_show_inv_slot
