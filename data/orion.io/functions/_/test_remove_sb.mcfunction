@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] test_remove_sb","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] test_remove_sb","italic":true,"color":"red"}]
 scoreboard objectives remove IO_INV_SLOT_0
 scoreboard objectives remove IO_INV_SLOT_1
 scoreboard objectives remove IO_INV_SLOT_2

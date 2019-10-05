@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] ************* RUN *************","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] ************* RUN *************","italic":true,"color":"red"}]
 
 function orion.io:setblock_chest
 function orion.io:set_storages_from_player_inventory
