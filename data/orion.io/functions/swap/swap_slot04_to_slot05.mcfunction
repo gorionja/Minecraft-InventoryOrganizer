@@ -1,6 +1,6 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] swap_slot04_to_slot05","italic":true,"color":"red"}]
-## tellraw @a [{"text":"[DEBUG] [4]","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] swap_slot04_to_slot05","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] [4]","italic":true,"color":"red"}]
 # A → B
 data modify block -29999983 56 -29999982 Items[0].tag.Storage append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:4b}]
 # Aのデータ削除
@@ -18,3 +18,10 @@ scoreboard players add swap_count IO_MS_STATUS 1
 
 function orion.io:slots/slot4/set_score_inventory_slot
 function orion.io:slots/slot5/set_score_inventory_slot
+function orion.io:_/test_show_inv_slot
+
+function orion.io:remove_empty_array
+function orion.io:renumbering_player_inventory_info
+function orion.io:slots/slot4/set_score_inventory_slot
+function orion.io:slots/slot5/set_score_inventory_slot
+function orion.io:_/test_show_inv_slot

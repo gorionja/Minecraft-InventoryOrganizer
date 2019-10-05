@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] test_give_item","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] test_give_item","italic":true,"color":"red"}]
 give @s minecraft:stone 10
 give @s minecraft:granite 10
 give @s minecraft:polished_granite 10

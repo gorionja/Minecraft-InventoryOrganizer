@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] create_item_sort_key","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] create_item_sort_key","italic":true,"color":"red"}]
 # 1 minecraft:air
 scoreboard players set air IO_MS_ITEM_SORT 1
 # 2 minecraft:stone

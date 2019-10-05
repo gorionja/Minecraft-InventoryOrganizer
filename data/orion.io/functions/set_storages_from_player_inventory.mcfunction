@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] set_storages_from_player_inv","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] set_storages_from_player_inv","italic":true,"color":"red"}]
 # プレイヤーのインベントリ情報をデータ保存用アイテムにペースト
 data modify block -29999983 56 -29999983 Items[0].tag.Storage[0] set from entity ORiONOAO Inventory[{Slot:0b}]
 data modify block -29999983 56 -29999983 Items[0].tag.Storage[1] set from entity ORiONOAO Inventory[{Slot:1b}]

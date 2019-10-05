@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] return_sort_result","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] return_sort_result","italic":true,"color":"red"}]
 clear
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sort_chest_a"],CustomName:"\"sort\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 summon minecraft:area_effect_cloud ~ ~1 ~ {Tags:["sort_chest_b"],CustomName:"\"sort\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}

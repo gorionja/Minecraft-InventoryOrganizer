@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] swap_all_slots","italic":true,"color":"red"}]
+tellraw @a [{"text":"[DEBUG] swap_all_slots","italic":true,"color":"red"}]
 
 execute unless score @s IO_INV_SLOT_0 matches 0 unless score @s IO_INV_SLOT_1 matches 0 if score @s IO_INV_SLOT_0 >= @s IO_INV_SLOT_1 run function orion.io:swap/swap_slot00_to_slot01
 execute unless score @s IO_INV_SLOT_1 matches 0 unless score @s IO_INV_SLOT_2 matches 0 if score @s IO_INV_SLOT_1 >= @s IO_INV_SLOT_2 run function orion.io:swap/swap_slot01_to_slot02
