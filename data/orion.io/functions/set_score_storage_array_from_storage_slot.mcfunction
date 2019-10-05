@@ -1,5 +1,5 @@
 ## Using for debug
-## tellraw @a [{"text":"[DEBUG] get_chest_array_to_slot","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] set_score_storage_array_from_storage_slot","italic":true,"color":"red"}]
 
 scoreboard players set @s IO_CST_ARY_0 -1
 scoreboard players set @s IO_CST_ARY_1 -1
