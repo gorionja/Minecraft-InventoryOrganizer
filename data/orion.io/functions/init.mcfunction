@@ -95,4 +95,6 @@ function orion.io:create_item_sort_key
 
 scoreboard players set loop_flg IO_MS_STATUS 0
 
+gamerule maxCommandChainLength 2147483647
+
 forceload add -29999978 -29999983
