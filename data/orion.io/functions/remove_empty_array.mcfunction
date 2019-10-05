@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] remove_empty_array","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] remove_empty_array","italic":true,"color":"red"}]
 execute if score @s IO_INV_SLOT_35 matches 0 run data remove block -29999983 56 -29999983 Items[0].tag.Storage[35]
 execute if score @s IO_INV_SLOT_35 matches 0 run data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 execute if score @s IO_INV_SLOT_34 matches 0 run data remove block -29999983 56 -29999983 Items[0].tag.Storage[34]

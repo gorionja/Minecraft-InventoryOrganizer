@@ -1,6 +1,6 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] swap_slot23_to_slot24","italic":true,"color":"red"}]
-tellraw @a [{"text":"[DEBUG] [23]","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] swap_slot23_to_slot24","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] [23]","italic":true,"color":"red"}]
 # A → B
 data modify block -29999983 56 -29999982 Items[0].tag.Storage append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:23b}]
 # Aのデータ削除

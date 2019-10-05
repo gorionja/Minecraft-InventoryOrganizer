@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] init_slots","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] init_slots","italic":true,"color":"red"}]
 scoreboard players set @s IO_INV_SLOT_0 0
 scoreboard players set @s IO_INV_SLOT_1 0
 scoreboard players set @s IO_INV_SLOT_2 0

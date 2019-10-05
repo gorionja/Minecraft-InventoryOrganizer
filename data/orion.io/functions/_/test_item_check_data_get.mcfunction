@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] test_item_check_data_get","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] test_item_check_data_get","italic":true,"color":"red"}]
 data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:"minecraft:air",Count:1}}]
 data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:"minecraft:stone",Count:1}}]
 data get entity @e[type=minecraft:item,limit=1,nbt={Item:{id:"minecraft:granite",Count:1}}]

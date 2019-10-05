@@ -1,5 +1,5 @@
 ## Using for debug
-tellraw @a [{"text":"[DEBUG] get_inventory_item_key","italic":true,"color":"red"}]
+## tellraw @a [{"text":"[DEBUG] get_inventory_item_key","italic":true,"color":"red"}]
 function orion.io:slots/init_slots
 execute if entity @s[nbt={Inventory:[{Slot:0b}]}] run function orion.io:slots/slot0/get_inventory_item_key
 execute if entity @s[nbt={Inventory:[{Slot:1b}]}] run function orion.io:slots/slot1/get_inventory_item_key
