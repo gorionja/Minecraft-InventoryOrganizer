@@ -3,17 +3,32 @@
 # ロード時コメント
 tellraw @a ["",{"text":"InventoryOrganizer loaded. ","italic":true,"color":"green"},{"text":"[Click]","color":"blue","clickEvent":{"action":"run_command","value":"/function orion.io:@settings/settings"}},{"text":" Open Settings"}]
 
+# ソート機能の排他制御用
+scoreboard objectives add IO_TR_LOCK dummy
+function orion.io:create_item_sort_key
+
+gamerule maxCommandChainLength 2147483647
+
+forceload add -29999978 -29999983
+
 scoreboard objectives add JUMP minecraft.custom:minecraft.jump
 
 scoreboard objectives add IO_MS_ITEM_SORT dummy
 
 scoreboard objectives add IO_TR_VALUE dummy
 
+# ソート検知用
+scoreboard objectives add IO_SORT_FLG dummy
+scoreboard objectives add IO_KEEP_TIME dummy
+
 scoreboard objectives add IO_TR_MIN_VALUE dummy
 
 scoreboard objectives add IO_MS_SETTING dummy
 
 scoreboard objectives add IO_MS_STATUS dummy
+scoreboard players set loop_flg IO_MS_STATUS 0
+
+# 各スロットアイテムのソート番号の管理用
 scoreboard objectives add IO_INV_SLOT_0 dummy
 scoreboard objectives add IO_INV_SLOT_1 dummy
 scoreboard objectives add IO_INV_SLOT_2 dummy
@@ -88,13 +103,3 @@ scoreboard objectives add IO_CST_ARY_32 dummy
 scoreboard objectives add IO_CST_ARY_33 dummy
 scoreboard objectives add IO_CST_ARY_34 dummy
 scoreboard objectives add IO_CST_ARY_35 dummy
-
-# ソート機能の排他制御用
-scoreboard objectives add IO_TR_LOCK dummy
-function orion.io:create_item_sort_key
-
-scoreboard players set loop_flg IO_MS_STATUS 0
-
-gamerule maxCommandChainLength 2147483647
-
-forceload add -29999978 -29999983

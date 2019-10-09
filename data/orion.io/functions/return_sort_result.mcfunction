@@ -1,6 +1,8 @@
 ## Using for debug
 ## tellraw @a [{"text":"[DEBUG] return_sort_result","italic":true,"color":"red"}]
-clear
+
+function orion.io:clear
+
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sort_chest_a"],CustomName:"\"sort\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 summon minecraft:area_effect_cloud ~ ~1 ~ {Tags:["sort_chest_b"],CustomName:"\"sort\"",Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 execute positioned as @e[nbt={CustomName:"{\"text\":\"sort\"}"}] run setblock ~ ~ ~ minecraft:chest{CustomName:"\"sort\""} replace
@@ -92,15 +94,15 @@ data modify block -29999983 56 -29999983 Items[0].tag.Storage append value {}
 
 # ３列目
 
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:27b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:27b}].Slot set value 0b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:28b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:28b}].Slot set value 1b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:29b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:29b}].Slot set value 2b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:30b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:30b}].Slot set value 3b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:31b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:31b}].Slot set value 4b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:32b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:32b}].Slot set value 5b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:33b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:33b}].Slot set value 6b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:34b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:34b}].Slot set value 7b
-execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{Slot:35b}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:35b}].Slot set value 8b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:27b}].Slot set value 0b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:28b}].Slot set value 1b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:29b}].Slot set value 2b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:30b}].Slot set value 3b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:31b}].Slot set value 4b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:32b}].Slot set value 5b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:33b}].Slot set value 6b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:34b}].Slot set value 7b
+execute if block -29999983 56 -29999983 minecraft:chest{Items:[{Slot:0b,tag:{Storage:[{}]}}]} run data modify block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:35b}].Slot set value 8b
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:0b}]
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:1b}]
 execute positioned as @e[tag=sort_chest_b] run data modify block ~ ~ ~ Items append from block -29999983 56 -29999983 Items[0].tag.Storage[{Slot:2b}]
