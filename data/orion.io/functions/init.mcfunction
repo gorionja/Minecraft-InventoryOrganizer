@@ -10,11 +10,8 @@ scoreboard objectives add IO_TR_LOCK dummy
 
 gamerule maxCommandChainLength 2147483647
 
-
-scoreboard objectives add JUMP minecraft.custom:minecraft.jump
-
 scoreboard objectives add IO_MS_ITEM_SORT dummy
-function orion.io:create_item_sort_key
+function orion.io:score/create_item_sort_key
 
 scoreboard objectives add IO_TR_VALUE dummy
 
@@ -68,39 +65,39 @@ scoreboard objectives add IO_INV_SLOT_34 dummy
 scoreboard objectives add IO_INV_SLOT_35 dummy
 
 # チェスト内アイテムのタグストレージ配列のSLOT番号
-scoreboard objectives add IO_CST_ARY_0 dummy
-scoreboard objectives add IO_CST_ARY_1 dummy
-scoreboard objectives add IO_CST_ARY_2 dummy
-scoreboard objectives add IO_CST_ARY_3 dummy
-scoreboard objectives add IO_CST_ARY_4 dummy
-scoreboard objectives add IO_CST_ARY_5 dummy
-scoreboard objectives add IO_CST_ARY_6 dummy
-scoreboard objectives add IO_CST_ARY_7 dummy
-scoreboard objectives add IO_CST_ARY_8 dummy
-scoreboard objectives add IO_CST_ARY_9 dummy
-scoreboard objectives add IO_CST_ARY_10 dummy
-scoreboard objectives add IO_CST_ARY_11 dummy
-scoreboard objectives add IO_CST_ARY_12 dummy
-scoreboard objectives add IO_CST_ARY_13 dummy
-scoreboard objectives add IO_CST_ARY_14 dummy
-scoreboard objectives add IO_CST_ARY_15 dummy
-scoreboard objectives add IO_CST_ARY_16 dummy
-scoreboard objectives add IO_CST_ARY_17 dummy
-scoreboard objectives add IO_CST_ARY_18 dummy
-scoreboard objectives add IO_CST_ARY_19 dummy
-scoreboard objectives add IO_CST_ARY_20 dummy
-scoreboard objectives add IO_CST_ARY_21 dummy
-scoreboard objectives add IO_CST_ARY_22 dummy
-scoreboard objectives add IO_CST_ARY_23 dummy
-scoreboard objectives add IO_CST_ARY_24 dummy
-scoreboard objectives add IO_CST_ARY_25 dummy
-scoreboard objectives add IO_CST_ARY_26 dummy
-scoreboard objectives add IO_CST_ARY_27 dummy
-scoreboard objectives add IO_CST_ARY_28 dummy
-scoreboard objectives add IO_CST_ARY_29 dummy
-scoreboard objectives add IO_CST_ARY_30 dummy
-scoreboard objectives add IO_CST_ARY_31 dummy
-scoreboard objectives add IO_CST_ARY_32 dummy
-scoreboard objectives add IO_CST_ARY_33 dummy
-scoreboard objectives add IO_CST_ARY_34 dummy
-scoreboard objectives add IO_CST_ARY_35 dummy
+scoreboard objectives add IO_INV_ARRAY_0 dummy
+scoreboard objectives add IO_INV_ARRAY_1 dummy
+scoreboard objectives add IO_INV_ARRAY_2 dummy
+scoreboard objectives add IO_INV_ARRAY_3 dummy
+scoreboard objectives add IO_INV_ARRAY_4 dummy
+scoreboard objectives add IO_INV_ARRAY_5 dummy
+scoreboard objectives add IO_INV_ARRAY_6 dummy
+scoreboard objectives add IO_INV_ARRAY_7 dummy
+scoreboard objectives add IO_INV_ARRAY_8 dummy
+scoreboard objectives add IO_INV_ARRAY_9 dummy
+scoreboard objectives add IO_INV_ARRAY_10 dummy
+scoreboard objectives add IO_INV_ARRAY_11 dummy
+scoreboard objectives add IO_INV_ARRAY_12 dummy
+scoreboard objectives add IO_INV_ARRAY_13 dummy
+scoreboard objectives add IO_INV_ARRAY_14 dummy
+scoreboard objectives add IO_INV_ARRAY_15 dummy
+scoreboard objectives add IO_INV_ARRAY_16 dummy
+scoreboard objectives add IO_INV_ARRAY_17 dummy
+scoreboard objectives add IO_INV_ARRAY_18 dummy
+scoreboard objectives add IO_INV_ARRAY_19 dummy
+scoreboard objectives add IO_INV_ARRAY_20 dummy
+scoreboard objectives add IO_INV_ARRAY_21 dummy
+scoreboard objectives add IO_INV_ARRAY_22 dummy
+scoreboard objectives add IO_INV_ARRAY_23 dummy
+scoreboard objectives add IO_INV_ARRAY_24 dummy
+scoreboard objectives add IO_INV_ARRAY_25 dummy
+scoreboard objectives add IO_INV_ARRAY_26 dummy
+scoreboard objectives add IO_INV_ARRAY_27 dummy
+scoreboard objectives add IO_INV_ARRAY_28 dummy
+scoreboard objectives add IO_INV_ARRAY_29 dummy
+scoreboard objectives add IO_INV_ARRAY_30 dummy
+scoreboard objectives add IO_INV_ARRAY_31 dummy
+scoreboard objectives add IO_INV_ARRAY_32 dummy
+scoreboard objectives add IO_INV_ARRAY_33 dummy
+scoreboard objectives add IO_INV_ARRAY_34 dummy
+scoreboard objectives add IO_INV_ARRAY_35 dummy

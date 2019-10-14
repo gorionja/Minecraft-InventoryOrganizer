@@ -16,14 +16,4 @@ data remove block -29999983 56 -29999982 Items[0].tag.Storage[{Slot:16b}]
 
 scoreboard players add swap_count IO_MS_STATUS 1
 
-function orion.io:slots/slot15/set_score_inventory_slot
-function orion.io:slots/slot16/set_score_inventory_slot
-function orion.io:set_score_storage_array_from_storage_slot
-## DEBUG ##
-## function orion.io:_/test_show_inv_slot
-
-function orion.io:remove_empty_array
-function orion.io:slots/slot15/set_score_inventory_slot
-function orion.io:slots/slot16/set_score_inventory_slot
-## DEBUG ##
-## function orion.io:_/test_show_inv_slot
+function orion.io:score/set_inv_slot_from_storage_sort_value
