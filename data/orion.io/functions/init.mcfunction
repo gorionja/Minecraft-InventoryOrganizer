@@ -3,17 +3,18 @@
 # ロード時コメント
 tellraw @a ["",{"text":"InventoryOrganizer loaded. ","italic":true,"color":"green"},{"text":"[Click]","color":"blue","clickEvent":{"action":"run_command","value":"/function orion.io:@settings/settings"}},{"text":" Open Settings"}]
 
+forceload add -29999978 -29999983
+
 # ソート機能の排他制御用
 scoreboard objectives add IO_TR_LOCK dummy
-function orion.io:create_item_sort_key
 
 gamerule maxCommandChainLength 2147483647
 
-forceload add -29999978 -29999983
 
 scoreboard objectives add JUMP minecraft.custom:minecraft.jump
 
 scoreboard objectives add IO_MS_ITEM_SORT dummy
+function orion.io:create_item_sort_key
 
 scoreboard objectives add IO_TR_VALUE dummy
 
